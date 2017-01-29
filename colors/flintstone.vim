@@ -28,9 +28,9 @@ hi ColorColumn ctermbg=236 guibg=#303030
 
 hi LineNr ctermfg=250 ctermbg=233 guifg=#bcbcbc guibg=#121212
 hi VertSplit ctermbg=233 ctermfg=250 cterm=NONE gui=NONE guifg=#bcbcbc guibg=#121212
-hi TabLine ctermbg=233 guibg=#121212
+hi TabLine ctermbg=233 ctermfg=250 cterm=NONE guibg=#121212 gui=NONE guifg=#bcbcbc
 hi TabLineFill cterm=NONE ctermbg=233 gui=NONE guibg=#121212
-hi TabLineSel cterm=bold,underline ctermbg=236 gui=bold,underline guifg=#303030
+hi TabLineSel cterm=bold ctermbg=236 gui=bold guibg=#303030
 hi StatusLine ctermfg=15 ctermbg=233 cterm=bold gui=bold guifg=#ffffff guibg=#121212
 hi StatusLineNC ctermfg=250 ctermbg=233 cterm=NONE gui=none guibg=#121212 guifg=#bcbcbc
 hi WildMenu ctermbg=236 ctermfg=15 cterm=bold,underline gui=bold,underline guibg=#303030 guifg=#ffffff
