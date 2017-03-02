@@ -22,7 +22,7 @@ hi Special ctermfg=119 guifg=#87ff5f
 hi Todo ctermfg=11 ctermbg=NONE cterm=bold gui=bold guibg=NONE guifg=#ffff00
 hi Directory ctermfg=33 guifg=#0087ff
 hi Title ctermfg=118 cterm=bold guifg=#87ff00
-hi MatchParen ctermbg=NONE cterm=underline guibg=NONE gui=underline
+hi MatchParen ctermbg=NONE cterm=bold,underline guibg=NONE gui=bold,underline
 hi Folded ctermfg=243 ctermbg=NONE guibg=NONE guifg=#767676
 hi ColorColumn ctermbg=233 guibg=#121212
 
