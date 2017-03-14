@@ -25,6 +25,7 @@ hi Title ctermfg=118 cterm=bold guifg=#87ff00
 hi MatchParen ctermbg=NONE cterm=bold,underline guibg=NONE gui=bold,underline
 hi Folded ctermfg=243 ctermbg=NONE guibg=NONE guifg=#767676
 hi ColorColumn ctermbg=233 guibg=#121212
+hi CursorLine cterm=NONE ctermbg=233 guibg=#121212
 
 hi LineNr ctermfg=250 ctermbg=234 guifg=#bcbcbc guibg=#1c1c1c
 hi VertSplit ctermbg=234 ctermfg=234 cterm=NONE gui=NONE guifg=#1c1c1c guibg=#1c1c1c
@@ -35,8 +36,9 @@ hi StatusLine ctermfg=15 ctermbg=234 cterm=bold gui=bold guifg=#ffffff guibg=#1c
 hi StatusLineNC ctermfg=250 ctermbg=234 cterm=NONE gui=none guibg=#1c1c1c guifg=#bcbcbc
 hi WildMenu ctermbg=236 ctermfg=15 cterm=bold,underline gui=bold,underline guibg=#303030 guifg=#ffffff
 
-hi ErrorMsg ctermfg=196 ctermbg=NONE cterm=bold gui=bold guibg=NONE guifg=#ff0000
 hi WarningMsg ctermfg=166 cterm=bold gui=bold guifg=#d75f00
+hi ErrorMsg ctermfg=196 ctermbg=NONE cterm=bold gui=bold guibg=NONE guifg=#ff0000
+hi Error ctermbg=1 guibg=#800000
 
 hi SpellBad ctermfg=160 ctermbg=NONE cterm=underline guisp=#d70000
 hi SpellRare ctermfg=166 ctermbg=NONE cterm=underline guisp=#d75f00
