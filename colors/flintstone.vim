@@ -26,7 +26,7 @@ hi MatchParen ctermbg=NONE cterm=bold,underline guibg=NONE gui=bold,underline
 hi Folded ctermfg=243 ctermbg=NONE guibg=NONE guifg=#767676
 hi ColorColumn ctermbg=233 guibg=#121212
 hi CursorLine cterm=NONE ctermbg=233 guibg=#121212
-
+hi CursorLineNr cterm=bold ctermbg=236 ctermfg=15 guibg=#303030 guifg=#ffffff
 hi LineNr ctermfg=250 ctermbg=234 guifg=#bcbcbc guibg=#1c1c1c
 hi VertSplit ctermbg=234 ctermfg=234 cterm=NONE gui=NONE guifg=#1c1c1c guibg=#1c1c1c
 hi TabLine ctermbg=234 ctermfg=250 cterm=NONE guibg=#1c1c1c gui=NONE guifg=#bcbcbc
