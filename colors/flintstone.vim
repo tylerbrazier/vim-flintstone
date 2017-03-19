@@ -49,8 +49,8 @@ hi Visual ctermbg=236 ctermfg=NONE guibg=#303030
 hi! link Search Visual
 hi! link IncSearch Search
 
-hi Pmenu ctermbg=234 ctermfg=166 guibg=#1c1c1c guifg=#d75f00
-hi PmenuSel ctermbg=236 ctermfg=166 guibg=#303030 guifg=#d75f00
+hi Pmenu ctermbg=234 ctermfg=250 guibg=#1c1c1c guifg=#bcbcbc
+hi PmenuSel ctermbg=236 ctermfg=15 cterm=bold gui=bold guibg=#303030 guifg=#ffffff
 hi! link PmenuSbar Pmenu
 hi! link PmenuThumb PmenuSel
 
