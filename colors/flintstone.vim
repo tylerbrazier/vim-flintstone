@@ -99,6 +99,7 @@ hi DiffDelete ctermfg=White ctermbg=DarkRed cterm=NONE
 hi DiffText ctermfg=Black ctermbg=DarkCyan cterm=NONE
 
 " for patch files and git commits
+" https://github.com/vim/vim/blob/master/runtime/syntax/diff.vim
 hi diffAdded ctermfg=Green
 hi diffRemoved ctermfg=Red
 hi diffChanged ctermfg=Yellow
