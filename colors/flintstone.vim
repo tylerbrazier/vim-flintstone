@@ -20,7 +20,6 @@ let colors_name = 'flintstone'
 " :help group-name
 " :help highlight-groups
 if &background == 'light'
-  hi Comment ctermfg=DarkGray
   hi Constant ctermfg=DarkBlue
   hi Identifier ctermfg=DarkGreen
   hi Statement ctermfg=DarkRed
@@ -31,7 +30,6 @@ if &background == 'light'
   hi Todo ctermfg=NONE ctermbg=Yellow
 
   hi ColorColumn ctermbg=Cyan
-  hi Directory ctermfg=DarkBlue
   hi Folded ctermfg=DarkMagenta ctermbg=NONE
   hi CursorLineNr ctermfg=Black
 
@@ -44,19 +42,17 @@ if &background == 'light'
   hi SpecialKey ctermfg=DarkMagenta
   hi Title ctermfg=Black cterm=bold,underline
 else
-  hi Comment ctermfg=DarkGray cterm=bold
-  hi Constant ctermfg=Blue cterm=bold
+  hi Constant ctermfg=Blue
   hi Identifier ctermfg=Green cterm=NONE
   hi Statement ctermfg=Red cterm=bold
-  hi PreProc ctermfg=Green cterm=NONE
-  hi Type ctermfg=Cyan cterm=NONE
-  hi Special ctermfg=Cyan cterm=NONE
-  hi Underlined ctermfg=Blue cterm=bold
+  hi PreProc ctermfg=Green
+  hi Type ctermfg=Cyan
+  hi Special ctermfg=Cyan
+  hi Underlined ctermfg=Blue
   hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold
 
   hi ColorColumn ctermbg=DarkBlue
-  hi Directory ctermfg=Blue cterm=bold
-  hi Folded ctermfg=Magenta ctermbg=NONE cterm=bold
+  hi Folded ctermfg=Magenta ctermbg=NONE
   hi CursorLineNr ctermfg=White
 
   hi Pmenu ctermfg=White ctermbg=DarkBlue cterm=NONE
@@ -65,9 +61,11 @@ else
   hi PmenuThumb ctermbg=DarkCyan
 
   hi Search ctermbg=DarkBlue ctermfg=NONE
-  hi SpecialKey ctermfg=Magenta cterm=bold
+  hi SpecialKey ctermfg=Magenta
   hi Title ctermfg=White cterm=bold,underline
 endif
+
+hi Comment ctermfg=DarkGray
 
 hi ErrorMsg ctermfg=Red ctermbg=NONE cterm=bold
 hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE
@@ -79,6 +77,7 @@ hi! link CursorColumn ColorColumn
 
 hi! link Question Normal
 hi! link MoreMsg Question
+hi! link Directory Constant
 
 hi! link IncSearch Search
 hi! link MatchParen Search
