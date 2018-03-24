@@ -21,9 +21,9 @@ let colors_name = 'flintstone'
 " :help highlight-groups
 if &background == 'light'
   hi Constant ctermfg=DarkBlue
-  hi Identifier ctermfg=DarkGreen
-  hi Statement ctermfg=DarkRed
-  hi PreProc ctermfg=DarkGreen
+  hi Identifier ctermfg=DarkMagenta cterm=NONE
+  hi Statement ctermfg=DarkRed cterm=bold
+  hi PreProc ctermfg=DarkMagenta
   hi Type ctermfg=Blue cterm=bold
   hi Special ctermfg=Blue cterm=bold
   hi Underlined ctermfg=DarkBlue
@@ -33,10 +33,10 @@ if &background == 'light'
   hi Folded ctermfg=DarkMagenta ctermbg=NONE
   hi CursorLineNr ctermfg=Black
 
-  hi Pmenu ctermfg=Black ctermbg=Cyan cterm=NONE
-  hi PmenuSel ctermfg=White ctermbg=Blue cterm=bold
+  hi Pmenu ctermfg=Black ctermbg=Cyan
+  hi PmenuSel ctermfg=Black ctermbg=Cyan cterm=bold,underline
   hi PmenuSbar ctermbg=Cyan
-  hi PmenuThumb ctermbg=Blue
+  hi PmenuThumb ctermbg=Black
 
   hi Search ctermbg=Cyan ctermfg=NONE
   hi SpecialKey ctermfg=DarkMagenta
@@ -55,12 +55,12 @@ else
   hi Folded ctermfg=Magenta ctermbg=NONE
   hi CursorLineNr ctermfg=White
 
-  hi Pmenu ctermfg=White ctermbg=DarkBlue cterm=NONE
-  hi PmenuSel ctermfg=Black ctermbg=DarkCyan cterm=bold
+  hi Pmenu ctermfg=White ctermbg=DarkBlue
+  hi PmenuSel ctermfg=White ctermbg=DarkBlue cterm=bold,underline
   hi PmenuSbar ctermbg=DarkBlue
-  hi PmenuThumb ctermbg=DarkCyan
+  hi PmenuThumb ctermbg=White
 
-  hi Search ctermbg=DarkBlue ctermfg=NONE
+  hi Search ctermbg=DarkBlue ctermfg=White
   hi SpecialKey ctermfg=Magenta
   hi Title ctermfg=White cterm=bold,underline
 endif
