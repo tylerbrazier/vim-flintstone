@@ -29,7 +29,6 @@ if &background == 'light'
   hi Underlined ctermfg=DarkBlue
   hi Todo ctermfg=NONE ctermbg=Yellow
 
-  hi ColorColumn ctermbg=Cyan
   hi Folded ctermfg=DarkMagenta ctermbg=NONE
   hi CursorLineNr ctermfg=Black
 
@@ -51,7 +50,6 @@ else
   hi Underlined ctermfg=Blue
   hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold
 
-  hi ColorColumn ctermbg=DarkBlue
   hi Folded ctermfg=Magenta ctermbg=NONE
   hi CursorLineNr ctermfg=White
 
@@ -73,6 +71,7 @@ hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE
 hi! link LineNr Comment
 hi! link FoldColumn LineNr
 hi! link SignColumn LineNr
+hi! link ColorColumn Search
 hi! link CursorColumn ColorColumn
 
 hi! link Question Normal
