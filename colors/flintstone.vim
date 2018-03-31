@@ -19,6 +19,7 @@ let colors_name = 'flintstone'
 " :help cterm-colors
 " :help group-name
 " :help highlight-groups
+" Default colors are at https://github.com/vim/vim/blob/master/src/syntax.c
 if &background == 'light'
   hi Constant ctermfg=DarkBlue
   hi Identifier ctermfg=DarkMagenta cterm=NONE
