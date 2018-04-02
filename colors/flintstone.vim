@@ -33,11 +33,6 @@ if &background == 'light'
   hi Folded ctermfg=DarkMagenta ctermbg=NONE
   hi CursorLineNr ctermfg=Black
 
-  hi Pmenu ctermfg=Black ctermbg=Cyan
-  hi PmenuSel ctermfg=Black ctermbg=Cyan cterm=bold,underline
-  hi PmenuSbar ctermbg=Cyan
-  hi PmenuThumb ctermbg=Black
-
   hi Search ctermbg=Cyan ctermfg=NONE
   hi SpecialKey ctermfg=DarkMagenta
   hi Title ctermfg=Black cterm=bold,underline
@@ -53,11 +48,6 @@ else
 
   hi Folded ctermfg=Magenta ctermbg=NONE
   hi CursorLineNr ctermfg=White
-
-  hi Pmenu ctermfg=White ctermbg=DarkBlue
-  hi PmenuSel ctermfg=White ctermbg=DarkBlue cterm=bold,underline
-  hi PmenuSbar ctermbg=DarkBlue
-  hi PmenuThumb ctermbg=White
 
   hi Search ctermbg=DarkBlue ctermfg=White
   hi SpecialKey ctermfg=Magenta
@@ -86,6 +76,11 @@ hi! link VisualNOS Visual
 
 hi! link TabLine TabLineFill
 hi! link WildMenu TabLineSel
+
+hi! link Pmenu TabLine
+hi! link PmenuSel TabLineSel
+hi! link PmenuSbar Pmenu
+hi! link PmenuThumb PmenuSel
 
 hi SpellBad ctermfg=Red ctermbg=NONE cterm=underline
 hi SpellRare ctermfg=Blue ctermbg=NONE cterm=underline
