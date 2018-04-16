@@ -30,7 +30,6 @@ if &background == 'light'
   hi Underlined ctermfg=DarkBlue
   hi Todo ctermfg=NONE ctermbg=Yellow
 
-  hi Folded ctermfg=DarkMagenta ctermbg=NONE
   hi CursorLineNr ctermfg=Black
   hi Search ctermbg=Cyan ctermfg=NONE
   hi Title ctermfg=Black cterm=bold,underline
@@ -44,13 +43,13 @@ else
   hi Underlined ctermfg=Blue
   hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold
 
-  hi Folded ctermfg=Magenta ctermbg=NONE
   hi CursorLineNr ctermfg=White
   hi Search ctermbg=DarkBlue ctermfg=White
   hi Title ctermfg=White cterm=bold,underline
 endif
 
 hi Comment ctermfg=DarkGray
+hi! link Folded Comment
 
 hi ErrorMsg ctermfg=Red ctermbg=NONE cterm=bold
 hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE
