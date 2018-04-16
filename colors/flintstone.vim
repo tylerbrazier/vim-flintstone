@@ -22,9 +22,9 @@ let colors_name = 'flintstone'
 " Default colors are at https://github.com/vim/vim/blob/master/src/syntax.c
 if &background == 'light'
   hi Constant ctermfg=DarkBlue
-  hi Identifier ctermfg=DarkMagenta cterm=NONE
+  hi Identifier ctermfg=DarkGreen cterm=NONE
   hi Statement ctermfg=DarkRed cterm=bold
-  hi PreProc ctermfg=DarkMagenta
+  hi PreProc ctermfg=DarkGreen
   hi Type ctermfg=Blue cterm=bold
   hi Special ctermfg=Blue cterm=bold
   hi Underlined ctermfg=DarkBlue
