@@ -51,18 +51,11 @@ endif
 hi Comment ctermfg=DarkGray
 hi! link Folded Comment
 
-hi ErrorMsg ctermfg=Red ctermbg=NONE cterm=bold
-hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE
-
 hi! link LineNr Comment
 hi! link FoldColumn LineNr
 hi! link SignColumn LineNr
 hi! link ColorColumn Search
 hi! link CursorColumn ColorColumn
-
-hi! link Question Normal
-hi! link MoreMsg Question
-hi! link Directory Constant
 
 hi! link IncSearch Search
 hi! link MatchParen Search
@@ -76,6 +69,13 @@ hi! link Pmenu TabLine
 hi! link PmenuSel TabLineSel
 hi! link PmenuSbar Pmenu
 hi! link PmenuThumb PmenuSel
+
+hi! link Question Normal
+hi! link MoreMsg Question
+hi! link Directory Constant
+
+hi ErrorMsg ctermfg=Red ctermbg=NONE cterm=bold
+hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE
 
 hi SpellBad ctermfg=Red ctermbg=NONE cterm=underline
 hi SpellRare ctermfg=Blue ctermbg=NONE cterm=underline
