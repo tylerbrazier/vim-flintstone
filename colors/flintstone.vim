@@ -32,9 +32,7 @@ if &background == 'light'
 
   hi Folded ctermfg=DarkMagenta ctermbg=NONE
   hi CursorLineNr ctermfg=Black
-
   hi Search ctermbg=Cyan ctermfg=NONE
-  hi SpecialKey ctermfg=DarkMagenta
   hi Title ctermfg=Black cterm=bold,underline
 else
   hi Constant ctermfg=Blue
@@ -48,9 +46,7 @@ else
 
   hi Folded ctermfg=Magenta ctermbg=NONE
   hi CursorLineNr ctermfg=White
-
   hi Search ctermbg=DarkBlue ctermfg=White
-  hi SpecialKey ctermfg=Magenta
   hi Title ctermfg=White cterm=bold,underline
 endif
 
