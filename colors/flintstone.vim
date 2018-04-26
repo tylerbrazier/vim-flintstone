@@ -25,8 +25,8 @@ if &background == 'light'
   hi Identifier ctermfg=DarkGreen cterm=NONE
   hi Statement ctermfg=DarkRed cterm=bold
   hi PreProc ctermfg=DarkGreen
-  hi Type ctermfg=Blue cterm=bold
-  hi Special ctermfg=Blue cterm=bold
+  hi Type ctermfg=DarkCyan
+  hi Special ctermfg=DarkCyan
   hi Underlined ctermfg=DarkBlue
   hi Todo ctermfg=NONE ctermbg=Yellow
 else
