@@ -29,10 +29,6 @@ if &background == 'light'
   hi Special ctermfg=Blue cterm=bold
   hi Underlined ctermfg=DarkBlue
   hi Todo ctermfg=NONE ctermbg=Yellow
-
-  hi CursorLineNr ctermfg=Black
-  hi Search ctermbg=Cyan ctermfg=NONE
-  hi Title ctermfg=Black cterm=bold,underline
 else
   hi Constant ctermfg=Blue
   hi Identifier ctermfg=Green cterm=NONE
@@ -42,18 +38,19 @@ else
   hi Special ctermfg=Cyan
   hi Underlined ctermfg=Blue
   hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold
-
-  hi CursorLineNr ctermfg=White
-  hi Search ctermbg=DarkBlue ctermfg=White
-  hi Title ctermfg=White cterm=bold,underline
 endif
 
 hi Comment ctermfg=DarkGray
-hi! link Folded Comment
+hi Search ctermbg=Blue ctermfg=White
+hi ErrorMsg ctermfg=Red ctermbg=NONE cterm=bold
+hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE
 
+hi! link Title Statement
+hi! link Folded Comment
 hi! link LineNr Comment
 hi! link FoldColumn LineNr
 hi! link SignColumn LineNr
+hi! link CursorLineNr Normal
 hi! link ColorColumn Search
 hi! link CursorColumn ColorColumn
 
@@ -73,9 +70,6 @@ hi! link PmenuThumb PmenuSel
 hi! link Question Normal
 hi! link MoreMsg Question
 hi! link Directory Constant
-
-hi ErrorMsg ctermfg=Red ctermbg=NONE cterm=bold
-hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE
 
 hi SpellBad ctermfg=Red ctermbg=NONE cterm=underline
 hi SpellRare ctermfg=Blue ctermbg=NONE cterm=underline
