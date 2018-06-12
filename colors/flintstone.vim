@@ -44,6 +44,8 @@ hi Comment ctermfg=DarkGray
 hi Search ctermbg=Blue ctermfg=White
 hi ErrorMsg ctermfg=Red ctermbg=NONE cterm=bold
 hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE
+hi SpellBad ctermfg=Red ctermbg=NONE cterm=underline
+hi SpellRare ctermfg=Blue ctermbg=NONE cterm=underline
 
 hi! link Title Statement
 hi! link Folded Comment
@@ -71,8 +73,6 @@ hi! link Question Normal
 hi! link MoreMsg Question
 hi! link Directory Constant
 
-hi SpellBad ctermfg=Red ctermbg=NONE cterm=underline
-hi SpellRare ctermfg=Blue ctermbg=NONE cterm=underline
 hi! link SpellCap SpellRare
 hi! link SpellLocal SpellRare
 
