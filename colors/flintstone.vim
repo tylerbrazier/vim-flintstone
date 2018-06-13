@@ -84,10 +84,10 @@ hi DiffText ctermfg=Black ctermbg=DarkCyan cterm=NONE
 
 " for patch files and git commits
 " https://github.com/vim/vim/blob/master/runtime/syntax/diff.vim
-hi diffAdded ctermfg=Green
-hi diffRemoved ctermfg=Red
-hi diffChanged ctermfg=Yellow
-hi diffFile ctermfg=Blue
-hi diffLine ctermfg=Cyan
-hi diffIndexLine ctermfg=Cyan
+hi! link diffFile Constant
+hi! link diffAdded Identifier
+hi! link diffRemoved Statement
+hi! link diffLine Type
+hi! link diffIndexLine Special
+hi! link diffChanged Todo
 hi! link diffSubname Normal
