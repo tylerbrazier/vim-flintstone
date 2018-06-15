@@ -29,6 +29,11 @@ if &background == 'light'
   hi Special ctermfg=DarkCyan
   hi Underlined ctermfg=DarkBlue
   hi Todo ctermfg=NONE ctermbg=Yellow
+
+  hi DiffAdd ctermfg=Black ctermbg=LightGreen
+  hi DiffDelete ctermfg=White ctermbg=LightRed
+  hi DiffChange ctermfg=Black ctermbg=LightBlue
+  hi DiffText ctermfg=Black ctermbg=LightCyan cterm=NONE
 else
   hi Constant ctermfg=Blue
   hi Identifier ctermfg=Green cterm=NONE
@@ -38,6 +43,11 @@ else
   hi Special ctermfg=Cyan
   hi Underlined ctermfg=Blue
   hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold
+
+  hi DiffAdd ctermfg=Black ctermbg=DarkGreen
+  hi DiffDelete ctermfg=Black ctermbg=DarkRed
+  hi DiffChange ctermfg=White ctermbg=DarkBlue
+  hi DiffText ctermfg=Black ctermbg=DarkCyan cterm=NONE
 endif
 
 hi Comment ctermfg=DarkGray
@@ -75,12 +85,6 @@ hi! link Directory Constant
 
 hi! link SpellCap SpellRare
 hi! link SpellLocal SpellRare
-
-" for vimdiff
-hi DiffAdd ctermfg=Black ctermbg=DarkGreen cterm=NONE
-hi DiffChange ctermfg=White ctermbg=DarkBlue cterm=NONE
-hi DiffDelete ctermfg=White ctermbg=DarkRed cterm=NONE
-hi DiffText ctermfg=Black ctermbg=DarkCyan cterm=NONE
 
 " for patch files and git commits
 " https://github.com/vim/vim/blob/master/runtime/syntax/diff.vim
