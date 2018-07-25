@@ -75,7 +75,7 @@ hi! link TabLine TabLineFill
 hi! link WildMenu TabLineSel
 
 hi! link Pmenu TabLine
-hi! link PmenuSel TabLineSel
+hi! link PmenuSel Search
 hi! link PmenuSbar Pmenu
 hi! link PmenuThumb PmenuSel
 
