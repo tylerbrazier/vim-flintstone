@@ -1,5 +1,5 @@
 " Colorscheme for light and dark backgrounds, and 8,16,256 color terminals
-" TODO gui colors
+" TODO gui colors, different status line colors when in different modes
 
 " $VIMRUNTIME/colors/README.txt
 " $VIMRUNTIME/colors/default.vim
