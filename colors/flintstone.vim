@@ -29,11 +29,6 @@ if &background == 'light'
   hi Special ctermfg=DarkCyan
   hi Underlined ctermfg=DarkBlue
   hi Todo ctermfg=NONE ctermbg=Yellow
-
-  hi DiffAdd ctermfg=Black ctermbg=LightGreen
-  hi DiffDelete ctermfg=White ctermbg=LightRed
-  hi DiffChange ctermfg=Black ctermbg=LightBlue
-  hi DiffText ctermfg=Black ctermbg=LightCyan cterm=NONE
 else
   hi Constant ctermfg=Blue
   hi Identifier ctermfg=Green cterm=NONE
@@ -43,11 +38,6 @@ else
   hi Special ctermfg=Cyan
   hi Underlined ctermfg=Blue
   hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold
-
-  hi DiffAdd ctermfg=Black ctermbg=DarkGreen
-  hi DiffDelete ctermfg=Black ctermbg=DarkRed
-  hi DiffChange ctermfg=White ctermbg=DarkBlue
-  hi DiffText ctermfg=Black ctermbg=DarkCyan cterm=NONE
 endif
 
 hi Comment ctermfg=DarkGray
@@ -88,10 +78,18 @@ hi! link SpellLocal SpellRare
 
 " for patch files and git commits
 " https://github.com/vim/vim/blob/master/runtime/syntax/diff.vim
-hi! link diffFile Constant
-hi! link diffAdded Identifier
-hi! link diffRemoved Statement
-hi! link diffLine Type
-hi! link diffIndexLine Special
-hi! link diffChanged Todo
+hi diffFile ctermfg=NONE ctermbg=NONE cterm=bold
+hi diffAdded ctermfg=Green ctermbg=NONE cterm=NONE
+hi diffRemoved ctermfg=Red ctermbg=NONE cterm=NONE
+hi diffLine ctermfg=Cyan ctermbg=NONE cterm=NONE
+hi diffIndexLine ctermfg=NONE ctermbg=NONE cterm=bold
+hi diffChanged ctermfg=DarkYellow ctermbg=NONE cterm=NONE
 hi! link diffSubname Normal
+
+" vim-gitgutter uses the foreground colors of Diff* to determine sign colors
+" (see https://github.com/airblade/vim-gitgutter)
+" but I'd rather have the background colored for vimdiff so use reverse here:
+hi DiffAdd ctermfg=Green ctermbg=Black cterm=reverse
+hi DiffDelete ctermfg=Red ctermbg=Black cterm=reverse
+hi DiffChange ctermfg=Yellow ctermbg=Black cterm=reverse
+hi DiffText ctermfg=Blue ctermbg=White cterm=reverse
