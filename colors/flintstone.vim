@@ -29,6 +29,7 @@ if &background == 'light'
   hi Special ctermfg=DarkCyan
   hi Underlined ctermfg=DarkBlue
   hi Todo ctermfg=NONE ctermbg=Yellow
+  hi Search ctermfg=White ctermbg=Blue
 else
   hi Constant ctermfg=Blue
   hi Identifier ctermfg=Green cterm=NONE
@@ -38,10 +39,10 @@ else
   hi Special ctermfg=Cyan
   hi Underlined ctermfg=Blue
   hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold
+  hi Search ctermfg=White ctermbg=DarkBlue
 endif
 
 hi Comment ctermfg=DarkGray
-hi Search ctermbg=Blue ctermfg=White
 hi ErrorMsg ctermfg=Red ctermbg=NONE cterm=bold
 hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE
 hi SpellBad ctermfg=Red ctermbg=NONE cterm=underline
@@ -64,7 +65,7 @@ hi! link VisualNOS Visual
 hi! link TabLine TabLineFill
 hi! link WildMenu TabLineSel
 
-hi! link Pmenu TabLine
+hi! link Pmenu Comment
 hi! link PmenuSel Search
 hi! link PmenuSbar Pmenu
 hi! link PmenuThumb PmenuSel
