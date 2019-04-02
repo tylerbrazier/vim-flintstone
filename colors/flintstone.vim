@@ -9,7 +9,7 @@
 " doesn't detect the right background (gnome terminal). :help 'bg'
 hi clear
 if exists('syntax_on')
-  syntax reset
+	syntax reset
 endif
 
 let colors_name = 'flintstone'
@@ -21,25 +21,25 @@ let colors_name = 'flintstone'
 " :help highlight-groups
 " Default colors are at https://github.com/vim/vim/blob/master/src/syntax.c
 if &background == 'light'
-  hi Constant ctermfg=DarkBlue guifg=#0000ff
-  hi Identifier ctermfg=DarkGreen cterm=NONE guifg=#00aa00
-  hi Statement ctermfg=DarkRed cterm=bold guifg=#ff0000
-  hi PreProc ctermfg=DarkGreen guifg=#00aa00
-  hi Type ctermfg=DarkCyan guifg=#00aaff
-  hi Special ctermfg=DarkCyan guifg=#00aaff
-  hi Underlined ctermfg=DarkBlue guifg=#0000ff
-  hi Todo ctermfg=NONE ctermbg=Yellow guifg=#000000 guibg=#ffff00
-  hi Search ctermfg=White ctermbg=Blue guibg=#00ffff
+	hi Constant ctermfg=DarkBlue guifg=#0000ff
+	hi Identifier ctermfg=DarkGreen cterm=NONE guifg=#00aa00
+	hi Statement ctermfg=DarkRed cterm=bold guifg=#ff0000
+	hi PreProc ctermfg=DarkGreen guifg=#00aa00
+	hi Type ctermfg=DarkCyan guifg=#00aaff
+	hi Special ctermfg=DarkCyan guifg=#00aaff
+	hi Underlined ctermfg=DarkBlue guifg=#0000ff
+	hi Todo ctermfg=NONE ctermbg=Yellow guifg=#000000 guibg=#ffff00
+	hi Search ctermfg=White ctermbg=Blue guibg=#00ffff
 else
-  hi Constant ctermfg=Blue guifg=#0080ff
-  hi Identifier ctermfg=Green cterm=NONE guifg=#00ff00
-  hi Statement ctermfg=Red cterm=bold guifg=#ff0000
-  hi PreProc ctermfg=Green guifg=#00ff00
-  hi Type ctermfg=Cyan guifg=#00aaff
-  hi Special ctermfg=Cyan guifg=#00aaff
-  hi Underlined ctermfg=Blue guifg=#0080ff
-  hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold guifg=#ffff00 guibg=NONE gui=bold
-  hi Search ctermfg=White ctermbg=DarkBlue guifg=#ffffff guibg=#0000ff
+	hi Constant ctermfg=Blue guifg=#0080ff
+	hi Identifier ctermfg=Green cterm=NONE guifg=#00ff00
+	hi Statement ctermfg=Red cterm=bold guifg=#ff0000
+	hi PreProc ctermfg=Green guifg=#00ff00
+	hi Type ctermfg=Cyan guifg=#00aaff
+	hi Special ctermfg=Cyan guifg=#00aaff
+	hi Underlined ctermfg=Blue guifg=#0080ff
+	hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold guifg=#ffff00 guibg=NONE gui=bold
+	hi Search ctermfg=White ctermbg=DarkBlue guifg=#ffffff guibg=#0000ff
 endif
 
 hi Comment ctermfg=DarkGray guifg=#808080
