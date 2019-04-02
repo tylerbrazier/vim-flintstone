@@ -1,5 +1,5 @@
 " Colorscheme for light and dark backgrounds, and 8,16,256 color terminals
-" TODO gui colors, different status line colors when in different modes
+" TODO different status line colors when in different modes
 
 " $VIMRUNTIME/colors/README.txt
 " $VIMRUNTIME/colors/default.vim
@@ -21,32 +21,32 @@ let colors_name = 'flintstone'
 " :help highlight-groups
 " Default colors are at https://github.com/vim/vim/blob/master/src/syntax.c
 if &background == 'light'
-  hi Constant ctermfg=DarkBlue
-  hi Identifier ctermfg=DarkGreen cterm=NONE
-  hi Statement ctermfg=DarkRed cterm=bold
-  hi PreProc ctermfg=DarkGreen
-  hi Type ctermfg=DarkCyan
-  hi Special ctermfg=DarkCyan
-  hi Underlined ctermfg=DarkBlue
-  hi Todo ctermfg=NONE ctermbg=Yellow
-  hi Search ctermfg=White ctermbg=Blue
+  hi Constant ctermfg=DarkBlue guifg=#0000ff
+  hi Identifier ctermfg=DarkGreen cterm=NONE guifg=#00aa00
+  hi Statement ctermfg=DarkRed cterm=bold guifg=#ff0000
+  hi PreProc ctermfg=DarkGreen guifg=#00aa00
+  hi Type ctermfg=DarkCyan guifg=#00aaff
+  hi Special ctermfg=DarkCyan guifg=#00aaff
+  hi Underlined ctermfg=DarkBlue guifg=#0000ff
+  hi Todo ctermfg=NONE ctermbg=Yellow guifg=#000000 guibg=#ffff00
+  hi Search ctermfg=White ctermbg=Blue guibg=#00ffff
 else
-  hi Constant ctermfg=Blue
-  hi Identifier ctermfg=Green cterm=NONE
-  hi Statement ctermfg=Red cterm=bold
-  hi PreProc ctermfg=Green
-  hi Type ctermfg=Cyan
-  hi Special ctermfg=Cyan
-  hi Underlined ctermfg=Blue
-  hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold
-  hi Search ctermfg=White ctermbg=DarkBlue
+  hi Constant ctermfg=Blue guifg=#0080ff
+  hi Identifier ctermfg=Green cterm=NONE guifg=#00ff00
+  hi Statement ctermfg=Red cterm=bold guifg=#ff0000
+  hi PreProc ctermfg=Green guifg=#00ff00
+  hi Type ctermfg=Cyan guifg=#00aaff
+  hi Special ctermfg=Cyan guifg=#00aaff
+  hi Underlined ctermfg=Blue guifg=#0080ff
+  hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold guifg=#ffff00 guibg=NONE gui=bold
+  hi Search ctermfg=White ctermbg=DarkBlue guifg=#ffffff guibg=#0000ff
 endif
 
-hi Comment ctermfg=DarkGray
-hi ErrorMsg ctermfg=Red ctermbg=NONE cterm=bold
-hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE
-hi SpellBad ctermfg=Red ctermbg=NONE cterm=underline
-hi SpellRare ctermfg=Blue ctermbg=NONE cterm=underline
+hi Comment ctermfg=DarkGray guifg=#808080
+hi ErrorMsg ctermfg=Red ctermbg=NONE cterm=bold guifg=#ff0000 guibg=NONE gui=bold
+hi WarningMsg ctermfg=Red ctermbg=NONE cterm=NONE guifg=#ff0000 guibg=NONE gui=NONE
+hi SpellBad ctermfg=Red ctermbg=NONE cterm=underline guisp=#ff0000
+hi SpellRare ctermfg=Blue ctermbg=NONE cterm=underline guisp=#0000ff
 
 hi! link Title Statement
 hi! link Folded Comment
@@ -79,18 +79,17 @@ hi! link SpellLocal SpellRare
 
 " for patch files and git commits
 " https://github.com/vim/vim/blob/master/runtime/syntax/diff.vim
-hi diffFile ctermfg=NONE ctermbg=NONE cterm=bold
-hi diffAdded ctermfg=Green ctermbg=NONE cterm=NONE
-hi diffRemoved ctermfg=Red ctermbg=NONE cterm=NONE
-hi diffLine ctermfg=Cyan ctermbg=NONE cterm=NONE
-hi diffIndexLine ctermfg=NONE ctermbg=NONE cterm=bold
-hi diffChanged ctermfg=DarkYellow ctermbg=NONE cterm=NONE
+hi diffFile ctermfg=NONE ctermbg=NONE cterm=bold gui=bold
+hi diffAdded ctermfg=Green ctermbg=NONE cterm=NONE guifg=#00aa00
+hi diffRemoved ctermfg=Red ctermbg=NONE cterm=NONE guifg=#ff0000
+hi diffLine ctermfg=Cyan ctermbg=NONE cterm=NONE guifg=#00aaff
+hi diffIndexLine ctermfg=NONE ctermbg=NONE cterm=bold gui=bold
+hi diffChanged ctermfg=DarkYellow ctermbg=NONE cterm=NONE guifg=#ffaa00
 hi! link diffSubname Normal
 
 " vim-gitgutter uses the foreground colors of Diff* to determine sign colors
-" (see https://github.com/airblade/vim-gitgutter)
 " but I'd rather have the background colored for vimdiff so use reverse here:
-hi DiffAdd ctermfg=Green ctermbg=Black cterm=reverse
-hi DiffDelete ctermfg=Red ctermbg=Black cterm=reverse
-hi DiffChange ctermfg=Yellow ctermbg=Black cterm=reverse
-hi DiffText ctermfg=Blue ctermbg=White cterm=reverse
+hi DiffAdd ctermfg=Green ctermbg=Black cterm=reverse guifg=#00ff00 guibg=#000000 gui=reverse
+hi DiffDelete ctermfg=Red ctermbg=Black cterm=reverse guifg=#ff0000 guibg=#ffffff gui=reverse
+hi DiffChange ctermfg=Yellow ctermbg=Black cterm=reverse guifg=#ffff00 guibg=#000000 gui=reverse
+hi DiffText ctermfg=Blue ctermbg=White cterm=reverse guifg=#00ffff guibg=#000000 gui=reverse
