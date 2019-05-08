@@ -22,9 +22,9 @@ let colors_name = 'flintstone'
 if &background == 'light'
  	hi Constant ctermfg=Blue guifg=#0000ff
  	hi Identifier ctermfg=DarkGreen cterm=NONE guifg=#008000
- 	hi Statement ctermfg=Red cterm=bold guifg=#ff0000
+ 	hi Statement ctermfg=Red guifg=#ff0000 gui=NONE
  	hi PreProc ctermfg=DarkGreen guifg=#008000
- 	hi Type ctermfg=Red cterm=bold guifg=#ff0000
+ 	hi Type ctermfg=Red guifg=#ff0000 gui=NONE
  	hi Special ctermfg=Blue guifg=#0000ff
  	hi Underlined ctermfg=Blue guifg=#0000ff
  	hi Todo ctermfg=NONE ctermbg=Yellow guifg=#000000 guibg=#ffff00
