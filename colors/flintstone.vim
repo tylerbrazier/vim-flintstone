@@ -29,6 +29,13 @@ if &background == 'light'
  	hi Underlined ctermfg=Blue guifg=#0000ff
  	hi Todo ctermfg=NONE ctermbg=Yellow guifg=#000000 guibg=#ffff00
  	hi Search ctermfg=Black ctermbg=Cyan guifg=#000000 guibg=#00ffff
+
+	" vim-gitgutter uses the foreground colors of Diff* to determine sign colors
+	" but I'd rather have the background colored for vimdiff so use reverse here:
+	hi DiffAdd ctermfg=DarkGreen ctermbg=White cterm=reverse guifg=#008000 guibg=#ffffff gui=reverse
+	hi DiffDelete ctermfg=Red ctermbg=White cterm=reverse guifg=#ff0000 guibg=#ffffff gui=reverse
+	hi DiffChange ctermfg=Black ctermbg=Yellow cterm=reverse guifg=#000000 guibg=#ffff00 cterm=reverse
+	hi DiffText ctermfg=Cyan ctermbg=Black cterm=reverse guifg=#00ffff guibg=#000000 gui=reverse
 else
  	hi Constant ctermfg=Cyan guifg=#00ffff
  	hi Identifier ctermfg=Green cterm=NONE guifg=#00ff00
@@ -39,6 +46,13 @@ else
  	hi Underlined ctermfg=Cyan guifg=#00ffff
  	hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold guifg=#ffff00 guibg=NONE gui=bold
  	hi Search ctermfg=White ctermbg=Blue guifg=#ffffff guibg=#0000ff
+
+	" vim-gitgutter uses the foreground colors of Diff* to determine sign colors
+	" but I'd rather have the background colored for vimdiff so use reverse here:
+	hi DiffAdd ctermfg=Green ctermbg=Black cterm=reverse guifg=#00ff00 guibg=#000000 gui=reverse
+	hi DiffDelete ctermfg=Red ctermbg=White cterm=reverse guifg=#ff0000 guibg=#ffffff gui=reverse
+	hi DiffChange ctermfg=Yellow ctermbg=Black cterm=reverse guifg=#ffff00 guibg=#000000 gui=reverse
+	hi DiffText ctermfg=Cyan ctermbg=Black cterm=reverse guifg=#00ffff guibg=#000000 gui=reverse
 endif
 
 hi Comment ctermfg=DarkGray guifg=#808080
@@ -85,10 +99,3 @@ hi diffRemoved ctermfg=Red guifg=#ff0000
 hi diffChanged ctermfg=Yellow guifg=#ffff00
 hi diffLine ctermfg=Cyan guifg=#00ffff
 hi! link diffSubname Normal
-
-" vim-gitgutter uses the foreground colors of Diff* to determine sign colors
-" but I'd rather have the background colored for vimdiff so use reverse here:
-hi DiffAdd ctermfg=Green ctermbg=Black cterm=reverse guifg=#00ff00 guibg=#000000 gui=reverse
-hi DiffDelete ctermfg=Red ctermbg=White cterm=reverse guifg=#ff0000 guibg=#ffffff gui=reverse
-hi DiffChange ctermfg=Yellow ctermbg=Black cterm=reverse guifg=#ffff00 guibg=#000000 gui=reverse
-hi DiffText ctermfg=Cyan ctermbg=Black cterm=reverse guifg=#00ffff guibg=#000000 gui=reverse
