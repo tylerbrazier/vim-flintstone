@@ -45,7 +45,7 @@ else
  	hi Special ctermfg=Cyan guifg=#00ffff
  	hi Underlined ctermfg=Cyan guifg=#00ffff
  	hi Todo ctermfg=Yellow ctermbg=NONE cterm=bold guifg=#ffff00 guibg=NONE gui=bold
- 	hi Search ctermfg=White ctermbg=Blue guifg=#ffffff guibg=#0000ff
+ 	hi Search ctermfg=White ctermbg=DarkBlue guifg=#ffffff guibg=#0000ff
 
 	" vim-gitgutter uses the foreground colors of Diff* to determine sign colors
 	" but I'd rather have the background colored for vimdiff so use reverse here:
