@@ -36,6 +36,16 @@ if &background == 'light'
 	hi DiffDelete ctermfg=Red ctermbg=White cterm=reverse guifg=#ff0000 guibg=#ffffff gui=reverse
 	hi DiffChange ctermfg=Black ctermbg=Yellow cterm=reverse guifg=#000000 guibg=#ffff00 cterm=reverse
 	hi DiffText ctermfg=Cyan ctermbg=Black cterm=reverse guifg=#00ffff guibg=#000000 gui=reverse
+
+	" for patch files and git commits
+	" https://github.com/vim/vim/blob/master/runtime/syntax/diff.vim
+	hi diffFile cterm=bold gui=bold
+	hi diffIndexLine cterm=bold gui=bold
+	hi diffAdded ctermfg=DarkGreen guifg=#008000
+	hi diffRemoved ctermfg=Red guifg=#ff0000
+	hi diffChanged ctermfg=Blue guifg=#0000ff
+	hi diffLine ctermfg=Blue guifg=#0000ff
+	hi! link diffSubname Normal
 else
  	hi Constant ctermfg=Cyan guifg=#00ffff
  	hi Identifier ctermfg=Green cterm=NONE guifg=#00ff00
@@ -53,6 +63,16 @@ else
 	hi DiffDelete ctermfg=Red ctermbg=White cterm=reverse guifg=#ff0000 guibg=#ffffff gui=reverse
 	hi DiffChange ctermfg=Yellow ctermbg=Black cterm=reverse guifg=#ffff00 guibg=#000000 gui=reverse
 	hi DiffText ctermfg=Cyan ctermbg=Black cterm=reverse guifg=#00ffff guibg=#000000 gui=reverse
+
+	" for patch files and git commits
+	" https://github.com/vim/vim/blob/master/runtime/syntax/diff.vim
+	hi diffFile cterm=bold gui=bold
+	hi diffIndexLine cterm=bold gui=bold
+	hi diffAdded ctermfg=Green guifg=#00ff00
+	hi diffRemoved ctermfg=Red guifg=#ff0000
+	hi diffChanged ctermfg=Cyan guifg=#00ffff
+	hi diffLine ctermfg=Cyan guifg=#00ffff
+	hi! link diffSubname Normal
 endif
 
 hi Comment ctermfg=DarkGray guifg=#808080
@@ -89,13 +109,3 @@ hi! link Directory Constant
 
 hi! link SpellCap SpellRare
 hi! link SpellLocal SpellRare
-
-" for patch files and git commits
-" https://github.com/vim/vim/blob/master/runtime/syntax/diff.vim
-hi diffFile cterm=bold gui=bold
-hi diffIndexLine cterm=bold gui=bold
-hi diffAdded ctermfg=Green guifg=#00ff00
-hi diffRemoved ctermfg=Red guifg=#ff0000
-hi diffChanged ctermfg=Yellow guifg=#ffff00
-hi diffLine ctermfg=Cyan guifg=#00ffff
-hi! link diffSubname Normal
