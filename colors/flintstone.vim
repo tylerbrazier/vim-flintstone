@@ -34,7 +34,7 @@ if &background == 'light'
 	" but I'd rather have the background colored for vimdiff so use reverse here:
 	hi DiffAdd ctermfg=DarkGreen ctermbg=White cterm=reverse guifg=#008000 guibg=#ffffff gui=reverse
 	hi DiffDelete ctermfg=Red ctermbg=White cterm=reverse guifg=#ff0000 guibg=#ffffff gui=reverse
-	hi DiffChange ctermfg=Black ctermbg=Yellow cterm=reverse guifg=#000000 guibg=#ffff00 cterm=reverse
+	hi DiffChange ctermfg=Blue ctermbg=White cterm=reverse guifg=#0000ff guibg=#ffffff gui=reverse
 	hi DiffText ctermfg=Cyan ctermbg=Black cterm=reverse guifg=#00ffff guibg=#000000 gui=reverse
 
 	" for patch files and git commits
