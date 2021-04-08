@@ -81,7 +81,7 @@ hi WarningMsg ctermfg=Black ctermbg=Yellow guifg=#000000 guibg=#ffff00
 hi SpellBad ctermfg=Red ctermbg=NONE cterm=underline guisp=#ff0000
 hi SpellRare ctermfg=Blue ctermbg=NONE cterm=underline guisp=#0000ff
 
-hi! link Title Statement
+hi! link Title Todo
 hi! link Folded Comment
 hi! link LineNr Comment
 hi! link FoldColumn LineNr
