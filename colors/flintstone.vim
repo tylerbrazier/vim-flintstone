@@ -101,3 +101,6 @@ hi! link QuickFixLine Visual
 hi! link IncSearch Search
 hi! link CurSearch Search
 hi! link Substitute Search
+hi! link TabLineSel StatusLine
+hi! link TabLine StatusLineNC
+hi! link TabLineFill TabLine
