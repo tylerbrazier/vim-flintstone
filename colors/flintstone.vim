@@ -35,7 +35,13 @@ elseif has('nvim')
 
 		" the default NvimLightGrey4 is too dark to see selected text
 		hi Visual guibg=NvimLightGrey2
+
+		hi Added guifg=#008000
+		hi Removed guifg=#ff0000
 	elseif &background == 'dark'
 		hi StatusLine guifg=Black
+
+		hi Added guifg=#00ff00
+		hi Removed guifg=#ff0000
 	endif
 endif
