@@ -31,7 +31,7 @@ elseif has('nvim')
 	hi! link TabLineSel StatusLine
 
 	if &background == 'light'
-		hi StatusLine   guifg=White
+		hi StatusLine guifg=White guibg=Black
 
 		" the default NvimLightGrey4 is too dark to see selected text
 		hi Visual guibg=NvimLightGrey2
@@ -39,7 +39,7 @@ elseif has('nvim')
 		hi Added guifg=#008000
 		hi Removed guifg=#ff0000
 	elseif &background == 'dark'
-		hi StatusLine guifg=Black
+		hi StatusLine guifg=Black guibg=White
 
 		hi Added guifg=#00ff00
 		hi Removed guifg=#ff0000
