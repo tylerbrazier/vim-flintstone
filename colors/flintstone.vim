@@ -14,9 +14,7 @@ if exists("syntax_on")
 endif
 let g:colors_name = 'flintstone'
 
-if has('vim')
-	"TODO maybe one day
-elseif has('nvim')
+if has('nvim')
 	" neovim will use gui* highlights even for terminals that support it
 	" :help termguicolors
 
