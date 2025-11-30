@@ -22,6 +22,7 @@ if has('nvim')
 	hi Normal guibg=NONE
 
 	hi StatusLineNC guifg=White guibg=Grey
+	hi QuickFixLine gui=bold
 
 	" the cursor is on the current one anyways
 	hi! link CurSearch Search
