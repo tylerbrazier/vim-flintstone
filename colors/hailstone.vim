@@ -1,6 +1,6 @@
 execute 'source' expand('<script>:h')..'/flintstone.vim'
 
-let g:colors_name = 'coldstone'
+let g:colors_name = 'hailstone'
 
 if has('nvim')
 	if &background == 'light'
