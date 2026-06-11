@@ -5,6 +5,8 @@
 " http://www.vim.org/scripts/script.php?script_id=106
 " https://github.com/vim/vim/blob/master/src/highlight.c
 " https://github.com/neovim/neovim/blob/master/src/nvim/highlight_group.c
+" :help group-name
+" :help highlight-groups
 
 " Don't set 'background' here so that colorscheme is reloaded when &bg changes
 " :help g:colors_name
