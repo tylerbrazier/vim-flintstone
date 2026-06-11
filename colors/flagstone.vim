@@ -18,7 +18,8 @@ if has('nvim')
 		hi Identifier guifg=#80ffc0
 		hi Function guifg=#ff4040
 
-		hi Directory guifg=#0080ff
-		hi QuickFixLine guifg=#0080ff
+		hi Directory guifg=#00c0ff
+		hi QuickFixLine guifg=#00c0ff
+		hi Search guibg=#404040
 	endif
 endif
